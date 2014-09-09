@@ -1,0 +1,345 @@
+<html><!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	
+	<title>FLAT - Dashboard</title>
+	<link rel="stylesheet" href="{{"static/css/font-awesome.css"|u}}">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{{"static/css/bootstrap.min.css"|u}}">
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href="{{"static/css/bootstrap-responsive.min.css"|u}}">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="{{"static/css/plugins/jquery-ui/smoothness/jquery-ui.css"|u}}">
+	<link rel="stylesheet" href="{{"static/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css"|u}}">
+	<!-- PageGuide -->
+	<link rel="stylesheet" href="{{"static/css/plugins/pageguide/pageguide.css"|u}}">
+	<!-- Fullcalendar -->
+	<link rel="stylesheet" href="{{"static/css/plugins/fullcalendar/fullcalendar.css"|u}}">
+	<link rel="stylesheet" href="{{"static/css/plugins/fullcalendar/fullcalendar.print.css"|u}}" media="print">
+	<!-- chosen -->
+	<link rel="stylesheet" href="{{"static/css/plugins/chosen/chosen.css"|u}}">
+	<!-- select2 -->
+	<link rel="stylesheet" href="{{"static/css/plugins/select2/select2.css"|u}}">
+	<!-- icheck -->
+	<link rel="stylesheet" href="{{"static/css/plugins/icheck/all.css"|u}}">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="{{"static/css/style.css"|u}}">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="{{"static/css/themes.css"|u}}">
+
+
+	<!-- jQuery -->
+	<script src="{{"static/js/jquery.min.js"|u}}"></script>
+	
+	
+	<!-- Nice Scroll -->
+	<script src="{{"static/js/plugins/nicescroll/jquery.nicescroll.min.js"|u}}"></script>
+	<!-- jQuery UI -->
+	<script src="{{"static/js/plugins/jquery-ui/jquery.ui.core.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/jquery-ui/jquery.ui.widget.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/jquery-ui/jquery.ui.mouse.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/jquery-ui/jquery.ui.draggable.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/jquery-ui/jquery.ui.resizable.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/jquery-ui/jquery.ui.sortable.min.js"|u}}"></script>
+	<!-- Touch enable for jquery UI -->
+	<script src="{{"static/js/plugins/touch-punch/jquery.touch-punch.min.js"|u}}"></script>
+	<!-- slimScroll -->
+	<script src="{{"static/js/plugins/slimscroll/jquery.slimscroll.min.js"|u}}"></script>
+	<!-- Bootstrap -->
+	<script src="{{"static/js/bootstrap.min.js"|u}}"></script>
+	<!-- vmap -->
+	<script src="{{"static/js/plugins/vmap/jquery.vmap.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/vmap/jquery.vmap.world.js"|u}}"></script>
+	<script src="{{"static/js/plugins/vmap/jquery.vmap.sampledata.js"|u}}"></script>
+	<!-- Bootbox -->
+	<script src="{{"static/js/plugins/bootbox/jquery.bootbox.js"|u}}"></script>
+	<!-- Flot -->
+	<script src="{{"static/js/plugins/flot/jquery.flot.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/flot/jquery.flot.bar.order.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/flot/jquery.flot.pie.min.js"|u}}"></script>
+	<script src="{{"static/js/plugins/flot/jquery.flot.resize.min.js"|u}}"></script>
+	<!-- imagesLoaded -->
+	<script src="{{"static/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"|u}}"></script>
+	<!-- PageGuide -->
+	<script src="{{"static/js/plugins/pageguide/jquery.pageguide.js"|u}}"></script>
+	<!-- FullCalendar -->
+	<script src="{{"static/js/plugins/fullcalendar/fullcalendar.min.js"|u}}"></script>
+	<!-- Chosen -->
+	<script src="{{"static/js/plugins/chosen/chosen.jquery.min.js"|u}}"></script>
+	<!-- select2 -->
+	<script src="{{"static/js/plugins/select2/select2.min.js"|u}}"></script>
+	<!-- icheck -->
+	<script src="{{"static/js/plugins/icheck/jquery.icheck.min.js"|u}}"></script>
+
+	<!-- Theme framework -->
+	<script src="{{"static/js/eakroko.min.js"|u}}"></script>
+	<!-- Theme scripts -->
+	<script src="{{"static/js/application.min.js"|u}}"></script>
+	<!-- Just for demonstration -->
+	<script src="{{"static/js/demonstration.min.js"|u}}"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="{{"static/js/plugins/placeholder/jquery.placeholder.min.js"|u}}"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="{{"static/img/favicon.ico"|u}}" />
+	<!-- Apple devices Homescreen icon -->
+	<link rel="apple-touch-icon-precomposed" href="{{"static/img/apple-touch-icon-precomposed.png"|u}}" />
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container-fluid">
+			<a href="#" id="brand">FLAT</a>
+			<ul class='main-nav'>
+				<li class='active'>
+					<a href="{{"home"|u}}">
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>资讯</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="forms-basic.html">Basic forms</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>招聘</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="components-timeline.html">Timeline</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>客户</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="tables-basic.html">Basic tables</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>财务</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="plugins-charts.html">Charts</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>考勤</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class='dropdown-submenu'>
+							<a href="#" data-toggle="dropdown" class='dropdown-toggle'>Shop</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="more-shop-list.html">List view</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>进销存</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="layouts-sidebar-hidden.html">Default hidden sidebar</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>资产</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="layouts-sidebar-hidden.html">Default hidden sidebar</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>考试</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="layouts-sidebar-hidden.html">Default hidden sidebar</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>问题</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="layouts-sidebar-hidden.html">Default hidden sidebar</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>知识</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="layouts-sidebar-hidden.html">Default hidden sidebar</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>设置</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="layouts-sidebar-hidden.html">Default hidden sidebar</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class='dropdown'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-envelope"></i><span class="label label-lightred">4</span></a>
+						<ul class="dropdown-menu pull-right message-ul">
+							<li>
+								<a href="#">
+									<img src="{{"static/img/demo/user-1.jpg"|u}}" alt="">
+									<div class="details">
+										<div class="name">Jane Doe</div>
+										<div class="message">
+											Lorem ipsum Commodo quis nisi ...
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="components-messages.html" class='more-messages'>Go to Message center <i class="icon-arrow-right"></i></a>
+							</li>
+						</ul>
+					</li>
+					<li class='dropdown colo'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-tint"></i></a>
+						<ul class="dropdown-menu pull-right theme-colors">
+							<li class="subtitle">
+								Predefined colors
+							</li>
+							<li>
+								<span class='red'></span>
+								<span class='orange'></span>
+								<span class='green'></span>
+								<span class="brown"></span>
+								<span class="blue"></span>
+								<span class='lime'></span>
+								<span class="teal"></span>
+								<span class="purple"></span>
+								<span class="pink"></span>
+								<span class="magenta"></span>
+								<span class="grey"></span>
+								<span class="darkblue"></span>
+								<span class="lightred"></span>
+								<span class="lightgrey"></span>
+								<span class="satblue"></span>
+								<span class="satgreen"></span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">John Doe <img src="{{"static/img/demo/user-avatar.jpg"|u}}" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="more-userprofile.html">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="{{"logout"|u}}">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="content">
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>Dashboard</h1>
+					</div>
+					<div class="pull-right">
+						<ul class="minitiles">
+							<li class='grey'>
+								<a href="#"><i class="icon-cogs"></i></a>
+							</li>
+							<li class='lightgrey'>
+								<a href="#"><i class="icon-globe"></i></a>
+							</li>
+						</ul>
+						<ul class="stats">
+							<li class='satgreen'>
+								<i class="icon-money"></i>
+								<div class="details">
+									<span class="big">$324,12</span>
+									<span>Balance</span>
+								</div>
+							</li>
+							<li class='lightred'>
+								<i class="icon-calendar"></i>
+								<div class="details">
+									<span class="big">February 22, 2013</span>
+									<span>Wednesday, 13:56</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				{{.Breadcrumbs}}
+				{{.LayoutContent}}
+			</div>
+		</div></div>
+	</body>
+
+	</html>
