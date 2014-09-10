@@ -24,9 +24,8 @@ func (this *baseController) Prepare() {
 	this.Data["context"] = context.AppCtx
 
 	this.IsLoggedIn, _ = this.GetSession("IsLoggedIn").(bool)
-
-	log.Println("IsLoggedIn", this.IsLoggedIn)
 	this.Data["IsLoggedIn"] = this.IsLoggedIn
+	log.Println("IsLoggedIn", this.IsLoggedIn)
 }
 
 func (this *baseController) display(tpl string) {

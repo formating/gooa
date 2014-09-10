@@ -37,9 +37,9 @@ func IsUserEmailExists(email string) bool {
 }
 
 //返回的user肯定不为空，因为函数里初始化了
-func FindUserByEmail(email string) (*BUser, error) {
+func FindUserByEmail(email string) (BUser, error) {
 	log.Println("FindUserByEmail " + email)
-	user := &BUser{Email: email}
-	err := orm.NewOrm().Read(user, "email")
+	user := BUser{Email: email}
+	err := orm.NewOrm().Read(&user, "email")
 	return user, err
 }

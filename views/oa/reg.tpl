@@ -7,13 +7,11 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<!-- Apple devices fullscreen -->
 	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	
-	<title>{{.context.Sitename}} - 注册</title>
+
+	<title>{{.context.Sitename}} - 登录</title>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="{{"static/css/bootstrap.min.css"|u}}">
-	<!-- Bootstrap responsive -->
-	<link rel="stylesheet" href="{{"static/css/bootstrap-responsive.min.css"|u}}">
 	<!-- icheck -->
 	<link rel="stylesheet" href="{{"static/css/plugins/icheck/all.css"|u}}">
 	<!-- Theme CSS -->
@@ -24,7 +22,7 @@
 
 	<!-- jQuery -->
 	<script src="{{"static/js/jquery.min.js"|u}}"></script>
-	
+
 	<!-- Nice Scroll -->
 	<script src="{{"static/js/plugins/nicescroll/jquery.nicescroll.min.js"|u}}"></script>
 	<!-- Validation -->
@@ -44,7 +42,7 @@
 			});
 		</script>
 	<![endif]-->
-	
+
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="{{"static/img/favicon.ico"|u}}" />
@@ -52,8 +50,7 @@
 	<link rel="apple-touch-icon-precomposed" href="{{"static/img/apple-touch-icon-precomposed.png"|u}}" />
 
 </head>
-
-<body class='login'>
+<body class='login reg'>
 	<div class="wrapper wrapperreg">
 		<h1><a href="{{""|u}}"><img src="{{"static/img/logo.png"|u}}" alt="" class='retina-ready' width="59" height="49">FLAT</a></h1>
 		{{if .flash.error}}
@@ -62,34 +59,34 @@
 		<div class="login-body">
 			<h2>注册</h2>
 			<form action="{{"reg"|u}}" method='post' class='form-validate' id="test">
-				<div class="control-group">
+				<div class="form-group">
 					<div class="email controls">
-						<input type="text" name='name' placeholder="企业名称" value="{{.flash.name}}" class='input-block-level' data-rule-required="false">
+						<input type="text" name='name' placeholder="企业名称" value="{{.flash.name}}" class='form-control' data-rule-required="false">
 					</div>
 				</div>
-				<div class="control-group">
+				<div class="form-group">
 					<div class="email controls">
-						<input type="text" name="phone" placeholder="电话" value="{{.flash.phone}}" class='input-block-level' data-rule-required="false">
+						<input type="text" name="phone" placeholder="电话" value="{{.flash.phone}}" class='form-control' data-rule-required="false">
 					</div>
 				</div>
-				<div class="control-group">
+				<div class="form-group">
 					<div class="email controls">
-						<input type="text" name="address" placeholder="地址" value="{{.flash.address}}" class='input-block-level' data-rule-required="false">
+						<input type="text" name="address" placeholder="地址" value="{{.flash.address}}" class='form-control' data-rule-required="false">
 					</div>
 				</div>
-				<div class="control-group">
+				<div class="form-group">
 					<div class="email controls">
-						<input type="text" name="email" placeholder="邮箱" value="{{.flash.email}}" class='input-block-level' data-rule-required="false" data-rule-email="true">
+						<input type="text" name="email" placeholder="邮箱" value="{{.flash.email}}" class='form-control' data-rule-required="false" data-rule-email="true">
 					</div>
 				</div>
-				<div class="control-group">
+				<div class="form-group">
 					<div class="email controls">
-						<input type="password" name="pw" placeholder="密码" class='input-block-level' data-rule-required="false">
+						<input type="password" name="pw" placeholder="密码" class='form-control' data-rule-required="false">
 					</div>
 				</div>
-				<div class="control-group">
+				<div class="form-group">
 					<div class="email controls">
-						<input type="password" name="pw_confirm" placeholder="密码确认" class='input-block-level' data-rule-required="false">
+						<input type="password" name="pw_confirm" placeholder="密码确认" class='form-control' data-rule-required="false">
 					</div>
 				</div>
 				<div class="submit">

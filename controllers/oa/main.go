@@ -137,6 +137,7 @@ func (this *MainController) DoReg() {
 	}
 }
 func (this *MainController) Logout() {
+	this.SetSession("IsLoggedIn", false)
 	url := utils.U("")
 	this.Redirect(url, 302)
 }
